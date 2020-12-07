@@ -1,0 +1,205 @@
+/* Setting variables for future use */
+
+:root {
+    --accent: #310859;
+    --dark: #5B636E;
+    --dark2: #8F8E98;
+    --light: #eeeeee;
+    --white: #ffffff;
+}
+
+@keyframes image-glow {
+    0% {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.cyberpunk2077mod.com/wp-content/uploads/2020/01/Cyberpunk-2077-Wallpaper-8.jpg') no-repeat center 30% /cover;
+    }
+    100% {
+        background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.)), url('https://www.cyberpunk2077mod.com/wp-content/uploads/2020/01/Cyberpunk-2077-Wallpaper-8.jpg') no-repeat center 30% /cover;
+    }
+}
+
+body {
+    max-width: 99%;
+    /* overflow-x: hidden; */
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+/* AUTO FLEX STRETCH HAS BEEN ONE OF THE MOST FRUSTRATING FEATURES OF BOOTSTRAP ROWS AND COLUMNS. */
+
+.no-stretch {
+    align-items: flex-start;
+}
+
+.slow-spin {
+    -webkit-animation: fa-spin 6s infinite linear;
+    animation: fa-spin 6s infinite linear;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.dark-text {
+    color: rgb(65, 65, 65) !important;
+}
+
+.p {
+    margin: 0;
+}
+
+.br {
+    border-radius: 1px;
+}
+
+.bg-me-accent {
+    background-color: var(--accent);
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+.subtle-text {
+    color: #cfced6;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+    font-size: 90%;
+}
+
+#btn-more {
+    position: absolute;
+    right: 5%;
+}
+
+#row-main-header {
+    background-color: var(--accent);
+    color: var(--white);
+    z-index: 100;
+}
+
+/* #region On Bg Image */
+
+#row-background-image {
+    /* background-color: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ;
+    background-image: url('https://www.cyberpunk2077mod.com/wp-content/uploads/2020/01/Cyberpunk-2077-Wallpaper-8.jpg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover; */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.cyberpunk2077mod.com/wp-content/uploads/2020/01/Cyberpunk-2077-Wallpaper-8.jpg') no-repeat center 30% /cover;
+    /* background-color: var(--dark) */
+}
+
+#row-background-image-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -0;
+    /* background-color: black; */
+    /* opacity:0.1; */
+}
+
+#contact-card {
+    /* padding: */
+}
+
+#input-phone {
+    width: 55%;
+}
+
+#input-ext {
+    width: 40%;
+}
+
+#input-message {
+    height: 100px;
+}
+
+#agreement {
+    font-size: 60%;
+}
+
+#text-box-over-image {
+    background-color: var(--accent);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 10px;
+}
+
+#text-over-image {
+    /* border-left: var(--accent) 10px solid; */
+    color: var(--white);
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, .4);
+    max-width: 90%;
+    ;
+}
+
+/* #endregion */
+
+#row---3 {
+    min-height: 200px;
+}
+
+#float-sect-1 {
+    /* position: absolute; */
+    /* left: 3rem; */
+}
+
+#float-sect-2 {
+    position: absolute;
+    width: 50%;
+    /* height: 100px; */
+    /* background-color: var(--white); */
+    right: 3rem;
+    color: var(--dark);
+}
+
+#float-sect-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://i.pinimg.com/originals/e9/85/93/e98593999fa2d78bf7c2fef3645d515e.jpg') no-repeat center center /cover;
+    ;
+    /* position: relative; */
+    /* width: 100%; */
+    height: 400px;
+}
+
+#section-4 {
+    color: var(--dark);
+}
+
+#section-5 {
+    background-color: var(--light)
+}
+
+button:hover {
+    color: white !important;
+}
+
+/* My own media query because bootstrap is absolute trash */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 200%;
+    }
+    #float-sect-2 {
+        position: relative;
+        width: 100%;
+        /* height: 100px; */
+        /* background-color: var(--white); */
+        right: 0rem;
+        color: var(--dark);
+    }
+    #float-sect-3 {
+        position: relative;
+        width: 100%;
+        /* height: 100px; */
+        /* background-color: var(--white); */
+        right: 0rem;
+        color: var(--dark);
+    }
+}
